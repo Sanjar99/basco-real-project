@@ -404,3 +404,43 @@
   height: 4rem;
   text-align: center;
 }
+
+.modal {
+  &__subject {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.2559px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 1rem;
+    @include responsive(desktop) {
+      font-size: 16px;
+    }
+    @include responsive(mobile) {
+      font-size: 14px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #000;
+    margin-bottom: 8px;
+    width: 86%;
+    @include responsive(desktop) {
+      font-size: 13px;
+      width: 70%;
+    }
+    @include responsive(mobile) {
+      font-size: 7px;
+      line-height: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
